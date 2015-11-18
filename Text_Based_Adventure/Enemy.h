@@ -11,7 +11,6 @@ public:
   int defense;
   int damage;
   void attack(Player* p);
-  void getAttacked(Player* p);
   void reinitialize();
   Enemy()
   {

@@ -13,4 +13,12 @@ void Player::reinitialize()
    currenthealth = health;
    defense = 0;
    damage = rand() % 15 + 10;
+<<<<<<< HEAD
 }
+=======
+}
+//void Player::attack(Enemy* e)
+//{
+//    e->currenthealth-=damage;
+//}
+>>>>>>> parent of 84f19b2... Player can attack enemy
