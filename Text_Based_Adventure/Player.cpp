@@ -29,5 +29,5 @@ void Player::reinitialize()
 }
 //void Player::attack(Enemy* e)
 //{
-//    e->currenthealth-=damage;
+    //e->currenthealth-=damage;
 //}

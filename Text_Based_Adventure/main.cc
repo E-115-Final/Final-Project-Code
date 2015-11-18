@@ -48,11 +48,12 @@ void fight()
             {
                 case 1:
                     cout << "You attack! Rat takes " << player->damage << " damage!" << endl;
-                    enemy->currenthealth-=player->damage;
+                    enemy->getAttacked(player);
                     if(enemy->currenthealth <= 0)
                     {
-                        battle = 0;
-                        victory = 1;
+                        battle = 0; // battle stops when enemy dies
+                        victory = 1; //player wins, victory is true
+                        continue;
                     }
                     break;
                 case 2:
@@ -67,8 +68,8 @@ void fight()
           enemy->attack(player);
         if(player->currenthealth <= 0)
         {
-            battle = 0;
-            victory = 0;
+            battle = 0; //battle stops when player dies
+            victory = 0;//player loses, victory is false
         }
     }
     if(victory)

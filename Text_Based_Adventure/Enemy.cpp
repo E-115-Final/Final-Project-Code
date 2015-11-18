@@ -1,7 +1,5 @@
-//hooray for mukund
 #include "main.h"
 #include "Enemy.h"
-
 #include "Player.h"
 #include <string>
 #include <vector>
@@ -13,6 +11,10 @@ using namespace std;
 void Enemy::attack(Player* p)
 {
     p->currenthealth-=damage;
+}
+void Enemy::getAttacked(Player* p)
+{
+    currenthealth-=p->damage;
 }
 void Enemy::reinitialize()
 {

@@ -26,7 +26,7 @@ public:
   int damage;
   int level;
   void reinitialize();
- // void attack(Enemy* e);
+  //void attack(Enemy* e);
   Player()
   {
    health = 60;
