@@ -5,4 +5,3 @@
 void fight();
 
 #endif /* FIGHT_H */
-
